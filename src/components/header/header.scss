@@ -1,0 +1,51 @@
+.header {
+    background: var(--primary-grad);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      justify-content: space-around;
+    }
+    
+  }
+  
+  .logo{
+    height:42px;
+    top:38px;
+    left:213px;
+    display: flex;
+    margin-left: 10vh;
+    
+    justify-content: center;
+    align-items: center;
+
+
+  }
+.vectorlogo{
+    width:29.66px;
+    height:29.85px;
+    top:8.58px;
+    left:8.58px;
+    left: 18.25%;
+    right: 18.64%;
+    top: 18.25%;
+    bottom: 18.25%;
+    
+
+}
+.movieslogo{
+   padding-left: 1rem;
+}

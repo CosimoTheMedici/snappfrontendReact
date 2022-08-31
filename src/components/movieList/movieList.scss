@@ -1,0 +1,42 @@
+.section_movielist
+{
+    position: relative;
+}
+.section_movielist {
+    height: 2096px;
+}
+.title_heading
+{
+    position: relative;
+    width: 564px;
+    height: 111.37px;
+    left: 672px;
+    top: 61.57px;
+    right: 684px;
+    bottom: 10.06px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #309975;
+
+
+
+}
+.section_movielist-movies{
+    
+    position: absolute;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 47px;
+    left: 10%;
+    right: 10%;
+    top: 290.09px;
+    margin-top: 10px;
+
+}

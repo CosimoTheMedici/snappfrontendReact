@@ -1,0 +1,41 @@
+.section-castDetails
+{
+
+    position: relative;
+    width: 1595px;
+    height: 407px;
+    left: 165px;
+    right: 160px;
+    bottom: 46px;
+}
+.section-castDetails-title
+{
+    position: absolute;
+    width: 87px;
+    height: 54px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+
+
+    color: #040505;
+}
+.section-castDetails-cast{
+    border: 2px solid black;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1595px;
+    height: 305px;
+    left: 0px;
+    top: 87.14px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}

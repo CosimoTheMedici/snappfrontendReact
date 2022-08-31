@@ -1,0 +1,158 @@
+.movie_card{ 
+    //border: blue 4px solid;
+    position: relative;
+    width: 486px;
+    height: 418px;    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    
+}
+.movie_card-2{ 
+    //border: blue 4px solid;
+    position: relative;
+    width: 486px;
+    height: 520px;    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    
+}
+.icon{
+  position: absolute;
+  left: 30%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  z-index: 5;
+  font-size: 10rem;
+  color:green;
+  -webkit-transition: all 1s ease;
+  visibility: hidden;
+}
+.myDiv{
+  visibility: hidden;
+  font-size: 10rem;
+}
+.icon:hover {
+  color: greenyellow;
+  -webkit-transition: all 1s ease;
+
+}
+.movie_card:hover,.movie_card-2:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.movie_card:hover .icon,.movie_card-2:hover .icon {
+  visibility: visible;
+}
+.movie_card:hover .myDiv{
+  visibility: visible;
+  //border: solid 3px blue;
+}
+.movie_card-img img{
+    height: inherit;
+    width: inherit;
+  }
+
+  .movie_card-img{
+    position: relative;
+    width: 434.95px;
+    height: 231.82px;
+    left: 26.51px;
+    top: 32.43px;
+    bottom: 153.75px;
+    right: 24.55px;
+
+    background: #ECEBBC;
+    border-radius: 10px;
+  }
+ 
+   .movie_card-title {
+    position: absolute;
+    width: 253.47px;
+    height: 36px;
+    left: 24.55px;
+    top: 288.33px;
+    bottom: 253.47px;
+    right: 207.99px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 132.5%;
+    color: #575757;
+
+   }
+   .movie_card-desc{
+    position: absolute;
+    width: 434.95px;
+    height: 77.62px;
+    left: 24.55px;
+    top: 335.58px;
+    bottom: 4.8px;
+    right: 26.51px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 132.5%;
+
+
+color: #575757;
+   }
+
+   .movie_card-actors{
+    position: absolute;
+    //border: 3px blue solid;
+    left: 25px;
+    right: 13px;
+    width: 448px;
+    height: 85px;
+    top: 400.79px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    //grid-gap: 33px;
+   }
+
+   .movie_card-actors span{
+    position: relative;
+    width: 156px;
+    height: 28.92px;
+    left: 7px;
+    top: 0px;
+    bottom: 36.4px;
+    // word-wrap: break-word;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+
+     color: #000000;
+    //border: 3px solid black;
+
+    
+   }
+
+   .movie_card-actors img{
+    border-radius: 50%;
+    position: relative;
+    width: 65px;
+    height: 67.13px;
+    left: 0px;
+
+    background: #C4C4C4;
+
+
+   }

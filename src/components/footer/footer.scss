@@ -1,0 +1,84 @@
+.footer {
+    background: var(--primary-grad);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 167px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    
+}
+.footer_message-left{
+    position: absolute;
+    width: 584.94px;
+    height: 38px;
+    left: 118px;
+    top: 60px;
+    bottom: 69px;
+    right: 1217.06px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 132.5%;
+    color: #FFFFFF;
+
+}
+.footer_message-right {
+    position: absolute;
+    width: 237.33px;
+    height: 21px;
+    left: 1328.94px;
+    top: 68px;
+    right: 353.73px;
+    bottom: 78px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+}
+.footer_message-icons{
+    color: #FFFFFF;
+    position: absolute;
+}
+.fb{
+    left: 1618.94px;
+    right: 291.66px;
+    top: 69.08px;
+    bottom: 70.96px;
+
+}
+.ln{
+    left: 1661.96px;
+    right: 253.61px;
+    top: 69.38px;
+    bottom: 80.94px;
+
+}
+.tw{
+    left: 1717.78px;
+    right: 181.89px;
+    top: 69.09px;
+    bottom: 80.66px;
+
+}
+.in{
+    
+    left: 1774.96px;
+    right: 125.5px;
+    top: 69.03px;
+    bottom: 80.69px
+
+}

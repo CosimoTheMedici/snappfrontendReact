@@ -1,0 +1,45 @@
+.main_section-display{
+    background: var(--secondary-grad);
+    position: relative;
+    height: 970px;
+    
+}
+.heading-top{
+    position: absolute;
+    left: 36.31%;
+    right: 34.47%;
+    top: 39.28%;
+    bottom: 54.34%;
+
+
+    color:#38FFBB;
+    width: 561px;
+    height: 62px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+
+}
+.heading-bottom{
+    position: absolute;
+    left: 33.49%;
+    right: 31.65%;
+    top: 51.09%;
+    bottom: 41.23%;
+
+    width: 670px;
+    height: 75px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150.19%;
+    text-align: center;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
