@@ -20,7 +20,7 @@ let cat3 = "Document"
         </div>
         <div className='movie_details-desc'>
 
-        <p>{props.movieData.description}</p>
+        <p>"Ea laboris magna non sit fugiat aliquip ipsum ipsum sint aliquip fugiat ea id. In mollit voluptate officia ad duis irure elit ad quis ullamco laborum anim ad. Qui magna Lorem est amet anim sit in laborum commodo deserunt anim.\r\nNon velit proident ipsum reprehenderit laborum dolore aliqua. Irure est quis eu cillum aute do officia enim aliquip minim mollit. Aliqua labore nisi commodo aliqua officia nostrud ex voluptate adipisicing ea et in adipisicing duis.\r\nEt do aliqua cupidatat ad quis eiusmod ullamco cillum aute ipsum aliquip magna officia adipisicing. Veniam ut nostrud et commodo pariatur id consequat mollit officia veniam. Esse dolor eiusmod culpa labore consectetur. Aliquip commodo labore aute deserunt fugiat incididunt officia duis.\r\nLaboris ex aute sint amet amet laboris laboris ut. Non tempor velit do minim mollit et amet. Non elit aute consectetur adipisicing. Reprehenderit velit eiusmod ipsum cillum occaecat non incididunt laboris labore aute dolor. Eiusmod amet dolore magna duis reprehenderit ullamco occaecat ea ipsum duis ad consequat nisi non. Reprehenderit Lorem ad et nostrud id id ea pariatur excepteur qui duis duis.\r\nTempor sit mollit irure laborum proident velit aliquip pariatur pariatur magna veniam et et. Id qui aute voluptate tempor in quis commodo commodo eiusmod ut. Lorem non eiusmod exercitation quis labore labore est consectetur.\r\n"</p>
       </div>
 
       </div>
