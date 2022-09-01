@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const ServiceBaseURL = 'http://localhost:5000'
+const ServiceBaseURL = 'https://snapp-backend-node.vercel.app'
 export function fetchTopMovieData() {
     return axios.get(`${ServiceBaseURL}/movies`,
     {
