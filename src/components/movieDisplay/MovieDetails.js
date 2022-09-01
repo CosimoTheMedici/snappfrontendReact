@@ -3,9 +3,9 @@ import images from '../../assets/images'
 
 import './movieDetails.scss'
 const MovieDetails = (props) => {
-let cat1= "props.movieData.category[0]"
-let cat2 = "props.movieData.category[1];"
-let cat3 = "props.movieData.category[2]"
+let cat1= "comedy"
+let cat2 = "luck"
+let cat3 = "Document"
   return (
     <section className='movie_details'>
       <div className='movie_details-img'><img src={images.Mystery} alt="" /></div>
