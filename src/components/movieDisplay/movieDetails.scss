@@ -5,7 +5,7 @@
     height:1596px;
     
 }
-.movie_details-img{
+.movie_details-img img{
     position: absolute;
     width: 1606px;
     height: 703.65px;
@@ -55,8 +55,8 @@
 }
 .small-span-one{
     position: absolute;
-    width: 69.41px;
-    height: 21.17px;
+    width: 80.41px;
+    height: 30.17px;
     // left: .82px;
     top: 84.21px;
 
@@ -65,6 +65,9 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 105%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 /* or 15px */
 
 
@@ -76,8 +79,8 @@
 .small-span-two{
     
     position: absolute;
-    width: 69.41px;
-    height: 21.17px;
+    width: 80.41px;
+    height: 30.17px;
     left: 95.82px;
     top: 84.21px;
 
@@ -86,6 +89,9 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 105%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* or 15px */
 
 
@@ -97,8 +103,8 @@
 }
 .small-span-three{
     position: absolute;
-    width: 78.41px;
-    height: 39.17px;
+    width: 80.41px;
+    height: 30.17px;
     left: 195.82px;
     top: 84.21px;
 
@@ -107,6 +113,9 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 105%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* or 15px */
 
 

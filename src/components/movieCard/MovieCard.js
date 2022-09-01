@@ -31,7 +31,7 @@ export const MovieCard1 = ({data}) => {
   return (
 
         <>
-           <Link to={`/movie/details/:${data.name}` } state={data} >
+           <Link to={`/movie/details/${data.name}` } state={data} >
                 <div className='movie_card-2' onMouseEnter={() => console.log("me")}>
                     <div className='movie_card-img'>
                                 

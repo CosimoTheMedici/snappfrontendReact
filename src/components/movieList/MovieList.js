@@ -2,14 +2,17 @@ import React,{useEffect,useState} from 'react'
 import ReactPaginate from 'react-paginate'
 import {  MovieCard1 } from '../movieCard/MovieCard'
 import Pagination from '../pagination/Pagination'
-import { fetchAllMoviesData } from '../services/Services'
+import { fetchAllMoviesData, fetchMoviesDataSearch } from '../services/Services'
 import { MovieData } from './MovieData'
 
 import './movieList.scss'
 const MovieList = () => {
     const [movieData, setMovieData] = useState([])
+    const [wholeMovieData, setWholeMovieData] = useState([])
     const [pageNum, setPageNum] = useState(1)
     const [limit, setLimit] = useState(9)
+    const [pageCount, setPageCount] = useState(11)
+    const [pager, setPager] = useState(false)
     useEffect(() => {
         getMovieListData(pageNum,limit)
       }, [])
@@ -17,9 +20,28 @@ const MovieList = () => {
       const getMovieListData = async (pageNum,limit) => {
         try {
           const getmoviesData = await fetchAllMoviesData(pageNum,limit);
-          const total = getmoviesData.headers;
-          console.log(total)
           setMovieData(getmoviesData.data);
+          console.log("pager1",pager);
+        } catch (ex) {
+          console.log(ex, "ex");
+         
+        }
+      };
+      const getMovieListSerchData = async (movietitle) => {
+        try {
+            console.log("pager2",pager)
+            console.log("movietitle",movietitle.length)
+            const me = movietitle.length === 0 ? setPager(false):setPager(true);
+            let getmoviesData = movietitle !=="" || movietitle !==undefined ||movietitle.length !== 0 ?
+           await fetchMoviesDataSearch(movietitle)
+          : getMovieListData(pageNum,limit)
+          console.log("pager2",pager)
+          setWholeMovieData(getmoviesData.data)
+          pagedata(pageNum,limit)
+          setPageCount(getmoviesData.data.length/9)
+          console.log("getmoviesData",getmoviesData)
+
+          //setMovieData(getmoviesData.data);
         } catch (ex) {
           console.log(ex, "ex");
          
@@ -28,11 +50,25 @@ const MovieList = () => {
       const handlePageClick = (data) => {
         console.log(data.selected);
         let page = data.selected +1;
-        getMovieListData(page,limit)
+        pager ===true ?pagedata(page,9):getMovieListData(page,limit);
+        console.log("pager",pager)
+        
+    
+      }
+
+      const pagedata = (page,limit) => {
+
+           const startIndex = (page - 1) * limit
+           const endIndex = page * limit
+           setMovieData(wholeMovieData.slice(startIndex,endIndex))
+        
     
       }
   return (
     <>
+    
+        <input className='input-tag' type="text" onKeyUp={(e) => getMovieListSerchData(e.target.value)} />
+  
     <section className='section_movielist'>
         <div className='title_heading'><span >Movie information hub</span></div>
         <div className='section_movielist-movies'>
@@ -52,7 +88,7 @@ const MovieList = () => {
       previousLabel={"previous"}
       nextLabel={"next"}
       breakLabel={"..."}
-      pageCount={11}
+      pageCount={pageCount}
       marginPagesDisplayed={2}
       pageRangeDisplayed={3}
       onPageChange={handlePageClick}

@@ -20,3 +20,13 @@ export function fetchAllMoviesData(pageNum,limit) {
      },
     });
   }
+
+export function fetchMoviesDataSearch(movietitle) {
+    return axios.get(`${ServiceBaseURL}/movies/${movietitle}`,
+    {
+      headers: { 
+        Authorization: "",
+        'Content-Type': 'application/json'
+     },
+    });
+  }

@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
 import MovieList from '../components/movieList/MovieList'
-import Pagination from '../components/pagination/Pagination'
+import ScrollButton from '../components/scroller/ScrollButton'
 
 const ListPage = () => {
   return (
@@ -10,6 +10,7 @@ const ListPage = () => {
       <Header />
       <MovieList />
       {/* <Pagination /> */}
+      <ScrollButton />
       <Footer />
     </section>
   )
