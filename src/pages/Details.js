@@ -33,7 +33,7 @@ const Details = () => {
     <section>
       <Header />
       <MovieDetails movieData={movieData}/>
-        {/* <section className='section-castDetails'>
+         <section className='section-castDetails'>
           <div className='section-castDetails-title'>Cast</div>
           <div className="section-castDetails-cast">
           {(movieData.actors.map(movie => (
@@ -44,7 +44,7 @@ const Details = () => {
             </div>
           )))}
         </div>
-      </section> */}
+      </section> 
       <Footer />
       
     </section>
