@@ -19,15 +19,21 @@ const Details = () => {
     try {
         
         const  fetchResponse =   await fetchMoviesDataSearch(movietitle)
-        setMovieData(fetchResponse.data[0]);
-        console.log(movieData.actors[0], "....")
-        console.log(fetchResponse.data[0])
+        setMovieData(fetchResponse.data);
+//         console.log(movieData.actors[0], "....")
+         console.log(fetchResponse.data)
     } catch (ex) {
       console.log(ex, "ex");
      
     }
     
   };
+  const data = [{actorName:"Delia Jennings",moviename:"Singleton Gates"},
+                {actorName:"Leanne Dillard",moviename:"Kelsey Roman"},
+                {actorName:"Webster Cross",moviename:"Hogan Farley"},
+                {actorName:"Mae Bullock",moviename:"Colette Kirby"},
+                {actorName:"Horton Lambert",moviename:"Paul Mejia"},
+                {actorName:"Kaufman Burton",moviename:"Bond Landry"}]
   return (
     <>
     <section>
@@ -36,10 +42,10 @@ const Details = () => {
          <section className='section-castDetails'>
           <div className='section-castDetails-title'>Cast</div>
           <div className="section-castDetails-cast">
-          {(movieData.actors.map(movie => (
+          {(data.actors.map(movie => (
             <div className="section-castDetails-cast-card">
               <img className="section-castDetails-cast-img" src={images.Gambia} alt="" />
-              <p>{movie.actorName} <br/> <span>{movie.actorName} </span></p>
+              <p>{movie.actorName} <br/> <span>{movie.moviename} </span></p>
               {console.log(movie.actorImg)}
             </div>
           )))}
