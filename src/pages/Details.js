@@ -28,7 +28,7 @@ const Details = () => {
     }
     
   };
-  const data = [{actorName:"Delia Jennings",moviename:"Singleton Gates"},
+  const datar = [{actorName:"Delia Jennings",moviename:"Singleton Gates"},
                 {actorName:"Leanne Dillard",moviename:"Kelsey Roman"},
                 {actorName:"Webster Cross",moviename:"Hogan Farley"},
                 {actorName:"Mae Bullock",moviename:"Colette Kirby"},
@@ -42,11 +42,11 @@ const Details = () => {
          <section className='section-castDetails'>
           <div className='section-castDetails-title'>Cast</div>
           <div className="section-castDetails-cast">
-          {(data.actors.map(movie => (
+          {(datar.map(movie => (
             <div className="section-castDetails-cast-card">
               <img className="section-castDetails-cast-img" src={images.Gambia} alt="" />
               <p>{movie.actorName} <br/> <span>{movie.moviename} </span></p>
-              {console.log(movie.actorImg)}
+              
             </div>
           )))}
         </div>
